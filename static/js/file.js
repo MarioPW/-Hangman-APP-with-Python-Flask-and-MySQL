@@ -1,0 +1,1 @@
+document.getElementById('demo').innerHTML = '@created with JS';
