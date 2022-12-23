@@ -1,4 +1,208 @@
-#navbar{
-    
-    background-color: rgb(86, 183, 75);
+
+#navbar{  
+	
+	font-family: cursive;
 }
+
+
+h6{ /* --- Color palette generated in https://mycolor.space/?hex=%23E9812B&sub=1 ---*/
+	color:		
+	
+	#12272C
+	#00C5A3
+	#D3FBD8
+	#FB9039
+	}
+header{
+	margin-bottom: 47px;
+}
+
+body{
+	width: 83%;
+	margin: auto;
+	background: #12272C;
+	margin-top: 47px;
+    color: #FB9039;
+}
+.cartel{
+	display: block;
+	margin: auto;
+	max-width: 872px;
+	color: #FB9039;
+	text-shadow:0px 3px 2px #000;
+    background:linear-gradient(to top, #12272C,#D3FBD8, #12272C);
+    border-radius:15px;
+	border-bottom:2px solid #FB9039;
+	border-top:2px solid #FB9039;
+    font-family: cursive;
+    text-align: center;
+    padding:28px 12px;
+}
+#mid_container{
+	margin:auto;
+	background: url("../images/HangmanFrontPage.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+#playing{
+	margin:auto;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+
+#Buttons_container{
+	padding: 38px;
+	height: 506px;
+	align-content: center;
+}
+a{
+	text-align: center;
+}
+#log_in{
+	background-color: transparent;
+}
+#category{
+	background-color: transparent;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 872px;
+	color: #FB9039;
+	font-size: 38px;
+	text-shadow:0px 3px 0px #12272C;
+    border-radius:15px;
+    font-family: cursive;
+    text-align: center;
+    padding:28px 12px;
+}
+
+.myButton { /* --- Buttons generated in https://www.bestcssbuttongenerator.com/#/10 --- */
+	width:max-content;
+	display: flex;
+	float: left;
+	padding: 11px;
+	background: transparent;
+	border-bottom:2px solid #12272C;
+	border-radius:15px;
+	cursor:pointer;
+	color:#FB9039;
+	font-family: cursive;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:2px 2px 2px #12272C;
+	margin-bottom: 20px;
+	margin-right: 11px;
+}
+
+
+
+/* Estilos para la barra de progreso */
+progress {
+	width: 50%; /* Ancho de la barra */
+	height: 20px; /* Altura de la barra */
+	background-color: #ddd; /* Color de fondo */
+	border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  /* Estilos para el porcentaje de progreso */
+  progress::-webkit-progress-bar {
+	background-color: #ddd; /* Color de fondo */
+	border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  /* Estilos para la barra de progreso completa */
+  progress::-webkit-progress-value {
+	background-color: #4caf50; /* Color del porcentaje de progreso */
+	border-radius: 5px; /* Bordes redondeados */
+  }
+
+
+
+
+.myButton:hover {
+	background:linear-gradient(to top, #12272C,#D3FBD8, #12272C);
+	color:#FB9039;
+	text-shadow:0px 1px 0px #000;
+	border-radius:15px;
+}
+.myButton:active {
+	position:right;
+	top:1px;
+}
+#just_play_button{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.letters_container{
+	float: right;
+	width: 57%;
+	margin-left: 43%;
+	height: 344px;;
+	background-color:transparent;
+}
+.word_to_guess{
+	float: right;
+	width: 57%;
+	margin-left: 43%;
+	height: 92px;
+	background-color:transparent;
+	
+}
+#lives0{
+	margin:auto;
+	background: url("../images/hangman0.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+#lives1{
+	margin:auto;
+	background: url("../images/hangman1.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+#lives2{
+	margin:auto;
+	background: url("../images/hangman2.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+#lives3{
+	margin:auto;
+	background: url("../images/hangman3.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+#lives4{
+	margin:auto;
+	background: url("../images/hangman4.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+#lives5{
+	margin:auto;
+	background: url("../images/hangman5.png") no-repeat center center;
+	background-size: cover;
+	border-radius:15px;
+	max-width: 872px;
+	min-width: 308px;
+}
+
+
+
+        

@@ -1,0 +1,28 @@
+{% extends 'main_temp.html' %}
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}   
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{% endfor%}
+
+<div class="row" id="mid_container">
+    <h2 id="category">Select Category</h2>
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <div class="container">
+            <div class="row" id="Buttons_container">
+            {% for category in categories %}  
+                <a href="{{ url_for('game', category=category.category ) }}" class='myButton'>{{ category.category }}</a>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+ {% endblock %}

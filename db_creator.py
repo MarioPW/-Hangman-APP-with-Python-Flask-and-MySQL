@@ -13,9 +13,9 @@ mt_cursor.execute("SHOW DATABASE")
 for i in mt_cursor:
     print(i)"""
 
-# Comand to do it work
+# Comand to make it work
 """
-\>>> from hello import app, db
+\>>> from db_qsl.py import app, db
 \>>> app.app_context().push()
 \>>> db.create_all()
 \>>> exit()
@@ -36,5 +36,9 @@ $ export FLASK_ENV=development
 $ export FLASK_APP=db_sql.py"""
 
 "then you can type 'flask run' or 'flask migrate', etc."
+import random
 
+animals = ["ANTELOPE", "BABOON", "BEAR", "BISON", "BUFFALO", "CAPUCHIN", "CHEETAH", "CHIMPANZEE", "COUGAR", "DEER", "EAGLE", "ELEPHANT", "Echidna", "FALCON", "GAZELLE", "GIRAFFE", "GIBBON", "GORILLA", "HAWK", "HYENA", "JAGUAR", "KANGAROO", "LEMUR", "LEOPARD", "LION", "MACAQUE", "MANDRILL", "MARMOSET", "MOOSE", "OWL", "ORANGUTAN", "PELICAN", "PLATYPUS", "PENGUIN", "RHINOCEROS", "TIGER", "VULTURE", "WALLABY", "WATER BUFFALO", "WOLF", "WOODPECKER", "YAK", "ZEBRA"]
 
+random_animal = random.choice(animals)
+print(random_animal)
