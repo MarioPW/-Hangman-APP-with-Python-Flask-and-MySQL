@@ -2,6 +2,25 @@
 
 {% block content %}
 
-    <h1>Hello {{ name|capitalize }}</h1>
+{% for message in get_flashed_messages() %}   
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{% endfor%}
 
+<div class = 'row'id='lives0' style="height: 750px;">
+
+    <div class='col-4'><header id='category'>Summary</header></div> 
+    <div class='col-8' >
+    <h2 id="category">Hello {{ current_user.username }}</h2>
+    <h2>Your Current Score is {{ current_user.record }}</h2>
+    {% if points %}
+    <h2>Your Last points {{ points }}   
+    <a href="{{ url_for('save_points', id=current_user.id)}}" class="myButton">Save</a>
+    {% endif %}
+    <a href="{{ url_for('categories') }}" class='myButton'>Play!!!</a><br>
+
+    </div>
+</div>
 {% endblock %}

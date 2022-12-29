@@ -1,1 +1,9 @@
 venv/
+__pycache__
+instance
+migrations
+domestic_animals.txt
+verbs.txt
+dressing.txt
+phrasal_verbs.txt
+db_creator.py

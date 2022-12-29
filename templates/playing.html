@@ -2,25 +2,35 @@
 
 {% block content %}
 
-<div class="row" id='{{ image }}'> 
-    <div> <header class="myButton">{{ category }}</header></div> 
+{% if message %} 
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{% endif%}
+
+<div class="row" id='{{ image }}' style="height: 750px;"> 
+    <div class='col-4'><header class="myButton">{{ category }}</header></div> 
              
-    <div class="letters_container">
-            <h6>{{ progress }}</h6>
-            <h6>Lives{{ lives }}</h6>
-            <h6>Word to Guess  {{ word_to_guess }}</h6>
+    <div class='col-8' >          
+            <h6>Points{{ points }}</h6>          
         {% for letter in letters %}
-
-        <a href="{{ url_for('playing', id=letter) }}" class="myButton" method="POST">{{ letter }} </a>
-
+            {% if letter in lines%}
+                <a class="myButton"  style="pointer-events: none; color: gray;">{{ letter }} </a>
+            {% else %}
+                <a href="{{ url_for('playing', id=letter) }}" class="myButton" method="POST">{{ letter }} </a>   
+            {% endif %}
         {% endfor%}       
     </div>
-    <div class="word_to_guess">
-        <h2>Guess this Word!!</h2>
-        {% for line in lines %}
-            <h2 class='myButton'>{{ line }}</h2>       
-        {% endfor %}
-        <a href="{{ url_for('index') }}" class='myButton'>Back to Index</a>
+    <div class="row">
+        <div class='col-4'></div>
+        <div class='col-8'>
+            <h3>Guess this Word!!</h3>
+            {% for line in lines %}
+                <p class='myButton'>{{ line }}</p>       
+            {% endfor %}</br>
+            <a href="{{ url_for('index') }}" class='myButton'>Back to Index</a>
+        </div>
     </div>
      
 </div>

@@ -8,8 +8,9 @@
     <div class="col-md-6">
         <div class="container">
             <div class="row" id="Buttons_container">
-                <p>Score</p>
-                <a href="{{ url_for('result') }}" calss='myButton'>Play Again!!!</a>
+                <p>Score {{ points }}</p>
+                <a href="{{ url_for('result') }}" class='myButton'>Continue Playing!!!</a>
+                <a href="{{ url_for('player_profile') }}" class='myButton'>Save Score!!!</a>
             </div>
         </div>
     </div>
