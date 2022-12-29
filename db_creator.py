@@ -33,6 +33,6 @@ Error: No such command 'db'."""
 '(venv) ...with activated virtual enviroment'
 """
 $ export FLASK_DEBUG=True
-$ export FLASK_APP=models.py"""
+$ export FLASK_APP=index.py"""
 
 "then you can type 'flask run' or 'flask migrate', etc."
