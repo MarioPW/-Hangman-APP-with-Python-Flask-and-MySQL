@@ -11,9 +11,7 @@ from models import *
 
 @app.route('/')
 def index():
-    global hits
-    global lives
-    global points
+    global hits, lives, points
     hits = 0
     lives = 0
     points = 0
@@ -28,10 +26,7 @@ def categories():
 
 @app.route("/game/<string:category>")
 def game(category):
-    global word
-    global category1
-    global lines
-    global hits
+    global word, category1, lines, hits
     parameters = Hangman.parameters(category)
     word = parameters['word_to_guess']
     category1 = parameters['category']
@@ -47,11 +42,7 @@ def game(category):
 
 @app.route("/playing/<string:id>", methods=['GET','POST'])
 def playing(id):
-    global lines
-    global lives
-    global hits
-    global message
-    global points
+    global lines, lives, hits, message, points
     game_stars = Hangman(word, lives, lines, hits, message, points) 
     playing_game = game_stars.progress(id)
     lines = playing_game['lines']
@@ -113,8 +104,7 @@ def admin():
 
 @app.route('/result')
 def result():
-    global hits
-    global lives
+    global hits, lives
     hits = []
     lives = 0
     categories =  Words.query.order_by(Words.id)
