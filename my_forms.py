@@ -24,7 +24,7 @@ class Log_inForm(FlaskForm):
 
 class Words_Form(FlaskForm):
     category = StringField('Category', validators=[DataRequired()], render_kw={"placeholder": "Category name"})
-    words = StringField('Words', validators=[DataRequired()], widget=TextArea(), render_kw={"placeholder": "Copy and paste or write a list of words separated by commas in the format '[word,second_word,third_word...etc]'. If it's a phrase, replace the space with an underscore."})
+    words = StringField('Words', validators=[DataRequired()], widget=TextArea(), render_kw={"placeholder": "Copy-paste or write a list of words in capital letters saparated by commas in the format '[WORD,SECOND_WORD,THIRD_WORD,PHRASE_WITH_SEVERAL_WORDS...etc]'. If it's a phrase, replace the space with an underscore."})
     submit = SubmitField('Submit')
 
 class Leters_Form(FlaskForm):
