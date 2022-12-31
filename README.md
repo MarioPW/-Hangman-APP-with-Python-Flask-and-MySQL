@@ -1,7 +1,7 @@
 Here are some instructions:
 0. You need to have MySQL in your computer.
 1. Don't forget to perform migrations to the database with Flask commands.
--- In the GitBash --
+-- In the GitBash --</br>
 (venv) ...with activated virtual enviroment</br>
 $ export FLASK_DEBUG=True</br>
 $ export FLASK_APP=index.py</br>
