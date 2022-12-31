@@ -1,4 +1,4 @@
-Here are some instructions:
+Here are some instructions:</br>
 0. You need to have MySQL in your computer.
 1. Don't forget to perform migrations to the database with Flask commands.
 -- In the GitBash --</br>
