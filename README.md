@@ -3,8 +3,8 @@ Here are some instructions:
 1. Don't forget to perform migrations to the database with Flask commands.
 -- In the GitBash --
 (venv) ...with activated virtual enviroment</br>
-$ export FLASK_DEBUG=True
-$ export FLASK_APP=index.py
+$ export FLASK_DEBUG=True</br>
+$ export FLASK_APP=index.py</br>
 "then you can type 'flask run' or 'flask migrate', etc."
 
 2. When starting, sign up with the name 'admin' and a password; this will give you access to the page's administration panel, whose link will appear in the navigation bar. 
